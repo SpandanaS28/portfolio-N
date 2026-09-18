@@ -1,0 +1,1298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shobhitha Spandana S | Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+
+  <body>
+    <!-- =====================================================
+         CUSTOM CURSOR
+    ====================================================== -->
+
+    <div class="cursor-halo" id="cursorHalo"></div>
+
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- =====================================================
+         GLOBAL BACKGROUND
+    ====================================================== -->
+
+    <canvas id="globalCanvas" aria-hidden="true"></canvas>
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <nav class="navbar">
+      <a href="#home" class="logo"> S<span>.</span> </a>
+
+      <div class="nav-links">
+        <a href="#home"> HOME </a>
+
+        <a href="#skills"> SKILLS </a>
+
+        <a href="#experience"> EXPERIENCE </a>
+
+        <a href="#projects"> PROJECTS </a>
+
+        <a href="#certificates"> CERTIFICATES </a>
+
+        <a
+          href="{{ url_for('static', filename='resume/Shobhitha_Spandana_S_Resume.pdf') }}"
+          target="_blank"
+        >
+          RESUME
+        </a>
+      </div>
+
+      <a href="#contact" class="contact-btn"> CONTACT ↗ </a>
+    </nav>
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="page-section hero" id="home">
+      <div class="background-grid"></div>
+
+      <div class="hero-content">
+        <p class="hero-label intro-step">HELLO / I'M</p>
+
+        <h1
+          class="hero-name"
+          id="animated-name"
+          data-name="Shobhitha Spandana S"
+        ></h1>
+
+        <p class="hero-summary intro-step">
+          AI/ML Engineering graduate with a strong foundation in Python,
+          software development, data processing, machine learning, and REST API
+          development. Hands-on experience building AI-powered applications and
+          deploying machine learning solutions using FastAPI and Docker.
+          Familiar with OOP, DSA, SQL, Git, SDLC, debugging, and cloud
+          technologies.
+        </p>
+
+        <div class="hero-roles intro-step">
+          <span> AI / ML DEVELOPER </span>
+
+          <span class="role-dot"></span>
+
+          <span> PYTHON DEVELOPER </span>
+
+          <span class="role-dot"></span>
+
+          <span> SOFTWARE DEVELOPER </span>
+        </div>
+
+        <div class="qualification intro-step">
+          <span class="qualification-line"></span>
+
+          <p>
+            B.E. ARTIFICIAL INTELLIGENCE & MACHINE LEARNING
+
+            <strong> • CGPA 8.5 </strong>
+          </p>
+        </div>
+
+        <!-- RESUME -->
+
+        <div class="hero-resume intro-step">
+          <a
+            href="{{ url_for('static', filename='resume/Shobhitha_Spandana_S_Resume.pdf') }}"
+            target="_blank"
+            class="resume-button"
+          >
+            VIEW RESUME
+
+            <span> ↗ </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-footer intro-step">
+        <div class="availability">
+          <span class="status-dot"></span>
+
+          OPEN TO OPPORTUNITIES
+        </div>
+
+        <div>BENGALURU / INDIA</div>
+
+        <div>PORTFOLIO / 2026</div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SKILLS
+    ====================================================== -->
+
+    <section class="page-section skills-section" id="skills">
+      <div class="background-grid"></div>
+
+      <div class="skills-heading">
+        <h2>
+          Technical
+
+          <span> ecosystem. </span>
+        </h2>
+
+        <p class="skills-description">
+          A technical foundation across programming, artificial intelligence,
+          backend development, databases, development tools, computer science
+          and cloud technologies.
+        </p>
+      </div>
+
+      <div class="skills-stage">
+        <div
+          class="cube-scene"
+          id="skillScene"
+          tabindex="0"
+          aria-label="Interactive skills cube"
+        >
+          <div class="skills-cube" id="skillObject">
+            <!-- FRONT -->
+
+            <div class="cube-face cube-front">
+              <span class="cube-skill skill-big" style="left: 10%; top: 14%">
+                Python
+              </span>
+
+              <span class="cube-skill" style="left: 59%; top: 16%">
+                JavaScript
+              </span>
+
+              <span class="cube-skill skill-small" style="left: 71%; top: 61%">
+                Java
+              </span>
+
+              <span class="cube-skill skill-wide" style="left: 12%; top: 69%">
+                Object-Oriented Programming
+              </span>
+
+              <span class="cube-skill" style="left: 40%; top: 43%">
+                NumPy
+              </span>
+            </div>
+
+            <!-- BACK -->
+
+            <div class="cube-face cube-back">
+              <span class="cube-skill" style="left: 12%; top: 15%">
+                Pandas
+              </span>
+
+              <span class="cube-skill" style="left: 57%; top: 24%">
+                Scikit-learn
+              </span>
+
+              <span class="cube-skill skill-small" style="left: 14%; top: 62%">
+                Matplotlib
+              </span>
+
+              <span class="cube-skill" style="left: 61%; top: 70%">
+                Seaborn
+              </span>
+
+              <span class="cube-skill skill-big" style="left: 29%; top: 43%">
+                Machine Learning
+              </span>
+            </div>
+
+            <!-- LEFT -->
+
+            <div class="cube-face cube-left">
+              <span class="cube-skill" style="left: 13%; top: 13%">
+                FastAPI
+              </span>
+
+              <span class="cube-skill skill-big" style="left: 59%; top: 34%">
+                Flask
+              </span>
+
+              <span class="cube-skill skill-wide" style="left: 10%; top: 61%">
+                Representational State Transfer Application Programming
+                Interfaces
+              </span>
+
+              <span class="cube-skill" style="left: 63%; top: 75%">
+                Postman
+              </span>
+
+              <span class="cube-skill skill-wide" style="left: 22%; top: 36%">
+                JavaScript Object Notation
+              </span>
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="cube-face cube-right">
+              <span class="cube-skill skill-wide" style="left: 10%; top: 14%">
+                Structured Query Language
+              </span>
+
+              <span class="cube-skill skill-wide" style="left: 46%; top: 39%">
+                Database Management Systems
+              </span>
+
+              <span class="cube-skill" style="left: 14%; top: 67%"> Git </span>
+
+              <span class="cube-skill skill-big" style="left: 60%; top: 68%">
+                GitHub
+              </span>
+
+              <span class="cube-skill" style="left: 25%; top: 42%">
+                Docker
+              </span>
+            </div>
+
+            <!-- TOP -->
+
+            <div class="cube-face cube-top">
+              <span class="cube-skill skill-big" style="left: 12%; top: 20%">
+                Streamlit
+              </span>
+
+              <span class="cube-skill" style="left: 63%; top: 28%">
+                Spring Boot
+              </span>
+
+              <span class="cube-skill skill-wide" style="left: 12%; top: 66%">
+                Data Structures and Algorithms
+              </span>
+
+              <span class="cube-skill skill-wide" style="left: 56%; top: 62%">
+                Software Development Life Cycle
+              </span>
+            </div>
+
+            <!-- BOTTOM -->
+
+            <div class="cube-face cube-bottom">
+              <span class="cube-skill" style="left: 11%; top: 17%">
+                Debugging
+              </span>
+
+              <span class="cube-skill skill-big" style="left: 54%; top: 28%">
+                Troubleshooting
+              </span>
+
+              <span class="cube-skill" style="left: 13%; top: 66%">
+                Cloud Computing
+              </span>
+
+              <span class="cube-skill skill-wide" style="left: 50%; top: 64%">
+                Artificial Intelligence and Cloud Technologies
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         EXPERIENCE
+    ====================================================== -->
+
+    <section class="page-section experience-section" id="experience">
+      <div class="background-grid"></div>
+
+      <div class="experience-heading">
+        <h2>Experience<span>.</span></h2>
+
+        <p class="experience-description">
+          Practical experience across artificial intelligence, cloud
+          technologies, data science, software development, machine learning and
+          data analysis.
+        </p>
+      </div>
+
+      <div class="experience-timeline">
+        <div class="timeline-line"></div>
+
+        <!-- EXPERIENCE 1 -->
+
+        <article class="experience-row experience-right experience-reveal">
+          <div class="experience-time">
+            <span class="date-value"> FEB 2026 </span>
+
+            <span class="time-line"></span>
+
+            <span class="date-value"> MAY 2026 </span>
+          </div>
+
+          <div class="timeline-node">
+            <span></span>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-card-top">
+              <div>
+                <p class="experience-company">SUPRMENTR TECHNOLOGIES PVT LTD</p>
+
+                <h3>AI & Cloud Computing Intern</h3>
+              </div>
+
+              <p class="experience-location">BANGALORE, KAR</p>
+            </div>
+
+            <div class="experience-details">
+              <div class="experience-detail">
+                <span class="detail-marker"></span>
+
+                <p>
+                  Developed an AI Code Assistant using Python and
+                  cloud-integrated technologies during a 15-week internship.
+                </p>
+              </div>
+
+              <div class="experience-detail">
+                <span class="detail-marker"></span>
+
+                <p>
+                  Built AI-based web development workflows involving API
+                  integration and real-time code generation.
+                </p>
+              </div>
+
+              <div class="experience-detail">
+                <span class="detail-marker"></span>
+
+                <p>
+                  Applied software development and cloud computing concepts
+                  while building and deploying scalable AI-driven solutions.
+                </p>
+              </div>
+
+              <div class="experience-detail">
+                <span class="detail-marker"></span>
+
+                <p>
+                  Worked on capstone development, debugging, problem solving and
+                  software engineering activities.
+                </p>
+              </div>
+            </div>
+
+            <div class="technology-heading">TECHNOLOGIES</div>
+
+            <div class="experience-tech">
+              <span>Python</span>
+              <span>Artificial Intelligence</span>
+              <span>Cloud Computing</span>
+              <span>API Integration</span>
+              <span>Real-Time Code Generation</span>
+              <span>Software Development</span>
+              <span>Debugging</span>
+              <span>Problem Solving</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- EXPERIENCE 2 -->
+
+        <article class="experience-row experience-left experience-reveal">
+          <div class="experience-card">
+            <div class="experience-card-top">
+              <div>
+                <p class="experience-company">SKILL INTERN</p>
+
+                <h3>Data Science Intern</h3>
+              </div>
+
+              <p class="experience-location">BANGALORE, KAR</p>
+            </div>
+
+            <div class="experience-details">
+              <div class="experience-detail">
+                <span class="detail-marker"></span>
+
+                <p>
+                  Analyzed large-scale Uber ride data to identify useful
+                  patterns related to ride efficiency, demand and customer
+                  experience.
+                </p>
+              </div>
+
+              <div class="experience-detail">
+                <span class="detail-marker"></span>
+
+                <p>
+                  Performed data cleaning, exploratory data analysis, geospatial
+                  mapping and predictive modeling using real-world ride data.
+                </p>
+              </div>
+
+              <div class="experience-detail">
+                <span class="detail-marker"></span>
+
+                <p>
+                  Analyzed peak demand zones and ride patterns to support
+                  dynamic pricing, driver positioning and better resource
+                  allocation.
+                </p>
+              </div>
+
+              <div class="experience-detail">
+                <span class="detail-marker"></span>
+
+                <p>
+                  Worked on ETA prediction insights and operational
+                  recommendations using data-driven analysis and machine
+                  learning techniques.
+                </p>
+              </div>
+            </div>
+
+            <div class="technology-heading">TECHNOLOGIES</div>
+
+            <div class="experience-tech">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>NumPy</span>
+              <span>Matplotlib</span>
+              <span>Seaborn</span>
+              <span>Scikit-learn</span>
+              <span>Folium</span>
+              <span>Data Analysis</span>
+              <span>Geospatial Mapping</span>
+              <span>Predictive Modeling</span>
+            </div>
+          </div>
+
+          <div class="timeline-node">
+            <span></span>
+          </div>
+
+          <div class="experience-time">
+            <span class="date-value"> JAN 2025 </span>
+
+            <span class="time-line"></span>
+
+            <span class="date-value"> MAR 2025 </span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         PROJECTS
+    ====================================================== -->
+
+    <section class="page-section projects-section" id="projects">
+      <div class="background-grid"></div>
+
+      <div class="projects-heading">
+        <p class="projects-label">BUILD / EXPERIMENT / DEPLOY</p>
+
+        <h2>
+          Selected
+
+          <span> projects. </span>
+        </h2>
+
+        <p class="projects-description">
+          A collection of AI, machine learning, backend, full-stack and
+          intelligent software systems built through academic work, independent
+          development and technical experimentation.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- MEETING MIND -->
+
+        <article class="project-card project-reveal" tabindex="0">
+          <div class="project-card-inner">
+            <div class="project-face project-front">
+              <div class="project-front-content">
+                <h3>MeetingMind AI</h3>
+
+                <div class="project-technologies">
+                  <span>Python</span>
+                  <span>FastAPI</span>
+                  <span>Groq API</span>
+                  <span>LLM</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+
+              <span class="project-rotate-text"> HOVER TO EXPLORE ↻ </span>
+            </div>
+
+            <div class="project-face project-back">
+              <span class="project-back-label"> PROJECT DETAILS </span>
+
+              <h3>MeetingMind AI</h3>
+
+              <p>
+                AI-powered meeting intelligence application that converts
+                unstructured meeting transcripts into structured summaries, key
+                decisions, action items, task owners and due dates.
+              </p>
+
+              <a
+                href="https://github.com/SpandanaS28/MeetingMind-AI"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link"
+              >
+                <span class="github-icon"> GH </span>
+
+                <span class="github-link-text"> VIEW PROJECT ON GITHUB </span>
+
+                <span class="github-arrow"> ↗ </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- AGENT SHIELD -->
+
+        <article class="project-card project-reveal" tabindex="0">
+          <div class="project-card-inner">
+            <div class="project-face project-front">
+              <div class="project-front-content">
+                <h3>AgentShield AI</h3>
+
+                <div class="project-technologies">
+                  <span>Python</span>
+                  <span>FastAPI</span>
+                  <span>Security Scanning</span>
+                  <span>REST API</span>
+                </div>
+              </div>
+
+              <span class="project-rotate-text"> HOVER TO EXPLORE ↻ </span>
+            </div>
+
+            <div class="project-face project-back">
+              <span class="project-back-label"> PROJECT DETAILS </span>
+
+              <h3>AgentShield AI</h3>
+
+              <p>
+                Security-focused application for analyzing network indicators
+                and uploaded files through scanning modules, protected API
+                access, scan history and security-oriented backend workflows.
+              </p>
+
+              <a
+                href="https://github.com/SpandanaS28/AgentSheild-AI"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link"
+              >
+                <span class="github-icon">GH</span>
+
+                <span class="github-link-text"> VIEW PROJECT ON GITHUB </span>
+
+                <span class="github-arrow"> ↗ </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- AI CODE ASSISTANT -->
+
+        <article class="project-card project-reveal" tabindex="0">
+          <div class="project-card-inner">
+            <div class="project-face project-front">
+              <div class="project-front-content">
+                <h3>AI Code Assistant</h3>
+
+                <div class="project-technologies">
+                  <span>Python</span>
+                  <span>Streamlit</span>
+                  <span>Groq API</span>
+                  <span>Generative AI</span>
+                </div>
+              </div>
+
+              <span class="project-rotate-text"> HOVER TO EXPLORE ↻ </span>
+            </div>
+
+            <div class="project-face project-back">
+              <span class="project-back-label"> PROJECT DETAILS </span>
+
+              <h3>AI Code Assistant</h3>
+
+              <p>
+                Generative AI development assistant capable of creating and
+                debugging code through a Streamlit interface connected to large
+                language models using the Groq API.
+              </p>
+
+              <a
+                href="https://github.com/SpandanaS28/AI-Code-Assistant"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link"
+              >
+                <span class="github-icon">GH</span>
+
+                <span class="github-link-text"> VIEW PROJECT ON GITHUB </span>
+
+                <span class="github-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- NOTIFICATION -->
+
+        <article class="project-card project-reveal" tabindex="0">
+          <div class="project-card-inner">
+            <div class="project-face project-front">
+              <div class="project-front-content">
+                <h3>Notification Prioritization Engine</h3>
+
+                <div class="project-technologies">
+                  <span>Python</span>
+                  <span>FastAPI</span>
+                  <span>SQLite</span>
+                  <span>Pydantic</span>
+                  <span>YAML</span>
+                </div>
+              </div>
+
+              <span class="project-rotate-text"> HOVER TO EXPLORE ↻ </span>
+            </div>
+
+            <div class="project-face project-back">
+              <span class="project-back-label"> PROJECT DETAILS </span>
+
+              <h3>Notification Prioritization Engine</h3>
+
+              <p>
+                AI-native backend decision engine that determines whether
+                notifications should be delivered immediately, batched or
+                suppressed using configurable rules and priority scoring.
+              </p>
+
+              <a
+                href="https://github.com/SpandanaS28/AI-Native-Solution-Crafting-Test-"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link"
+              >
+                <span class="github-icon">GH</span>
+
+                <span class="github-link-text"> VIEW PROJECT ON GITHUB </span>
+
+                <span class="github-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CHATBOT -->
+
+        <article class="project-card project-reveal" tabindex="0">
+          <div class="project-card-inner">
+            <div class="project-face project-front">
+              <div class="project-front-content">
+                <h3>Role-Based Banking Chatbot</h3>
+
+                <div class="project-technologies">
+                  <span>Python</span>
+                  <span>Streamlit</span>
+                  <span>TinyLlama</span>
+                  <span>OCR</span>
+                  <span>RBAC</span>
+                </div>
+              </div>
+
+              <span class="project-rotate-text"> HOVER TO EXPLORE ↻ </span>
+            </div>
+
+            <div class="project-face project-back">
+              <span class="project-back-label"> PROJECT DETAILS </span>
+
+              <h3>Role-Based Banking Chatbot</h3>
+
+              <p>
+                Secure document-aware banking assistant with role-based access
+                control, local TinyLlama processing, document question
+                answering, citations and OCR.
+              </p>
+
+              <a
+                href="https://github.com/SpandanaS28/Role_Based_Chatbot"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link"
+              >
+                <span class="github-icon">GH</span>
+
+                <span class="github-link-text"> VIEW PROJECT ON GITHUB </span>
+
+                <span class="github-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- LUNA -->
+
+        <article class="project-card project-reveal" tabindex="0">
+          <div class="project-card-inner">
+            <div class="project-face project-front">
+              <div class="project-front-content">
+                <h3>LUNA AI</h3>
+
+                <div class="project-technologies">
+                  <span>Python</span>
+                  <span>Flask</span>
+                  <span>Whisper</span>
+                  <span>OpenAI</span>
+                  <span>PostgreSQL</span>
+                </div>
+              </div>
+
+              <span class="project-rotate-text"> HOVER TO EXPLORE ↻ </span>
+            </div>
+
+            <div class="project-face project-back">
+              <span class="project-back-label"> PROJECT DETAILS </span>
+
+              <h3>LUNA AI</h3>
+
+              <p>
+                AI-powered video understanding application combining video
+                processing, speech transcription and conversational AI through a
+                Flask-based multimedia workflow.
+              </p>
+
+              <a
+                href="https://github.com/SpandanaS28/LUNA-AI-"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link"
+              >
+                <span class="github-icon">GH</span>
+
+                <span class="github-link-text"> VIEW PROJECT ON GITHUB </span>
+
+                <span class="github-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- APARTMENT -->
+
+        <article class="project-card project-reveal" tabindex="0">
+          <div class="project-card-inner">
+            <div class="project-face project-front">
+              <div class="project-front-content">
+                <h3>Apartment Portal</h3>
+
+                <div class="project-technologies">
+                  <span>Angular</span>
+                  <span>TypeScript</span>
+                  <span>Flask</span>
+                  <span>PostgreSQL</span>
+                  <span>Docker</span>
+                </div>
+              </div>
+
+              <span class="project-rotate-text"> HOVER TO EXPLORE ↻ </span>
+            </div>
+
+            <div class="project-face project-back">
+              <span class="project-back-label"> PROJECT DETAILS </span>
+
+              <h3>Apartment Portal</h3>
+
+              <p>
+                Full-stack apartment management system with CRUD operations,
+                Angular frontend, Flask REST APIs, PostgreSQL database
+                integration and containerized deployment.
+              </p>
+
+              <a
+                href="https://github.com/SpandanaS28/apartment-portal"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link"
+              >
+                <span class="github-icon">GH</span>
+
+                <span class="github-link-text"> VIEW PROJECT ON GITHUB </span>
+
+                <span class="github-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- MANUFACTURING -->
+
+        <article class="project-card project-reveal" tabindex="0">
+          <div class="project-card-inner">
+            <div class="project-face project-front">
+              <div class="project-front-content">
+                <h3>Manufacturing Efficiency Prediction</h3>
+
+                <div class="project-technologies">
+                  <span>Python</span>
+                  <span>Streamlit</span>
+                  <span>Pandas</span>
+                  <span>NumPy</span>
+                  <span>Machine Learning</span>
+                </div>
+              </div>
+
+              <span class="project-rotate-text"> HOVER TO EXPLORE ↻ </span>
+            </div>
+
+            <div class="project-face project-back">
+              <span class="project-back-label"> PROJECT DETAILS </span>
+
+              <h3>Manufacturing Efficiency Prediction</h3>
+
+              <p>
+                Machine learning application that analyzes manufacturing
+                parameters to predict an overall production efficiency score.
+              </p>
+
+              <a
+                href="https://github.com/SpandanaS28/capstone1-deployeds"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link"
+              >
+                <span class="github-icon">GH</span>
+
+                <span class="github-link-text"> VIEW PROJECT ON GITHUB </span>
+
+                <span class="github-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- HEART -->
+
+        <article class="project-card project-reveal" tabindex="0">
+          <div class="project-card-inner">
+            <div class="project-face project-front">
+              <div class="project-front-content">
+                <h3>Heart Disease Prediction</h3>
+
+                <div class="project-technologies">
+                  <span>Python</span>
+                  <span>Streamlit</span>
+                  <span>FastAPI</span>
+                  <span>NumPy</span>
+                  <span>Machine Learning</span>
+                </div>
+              </div>
+
+              <span class="project-rotate-text"> HOVER TO EXPLORE ↻ </span>
+            </div>
+
+            <div class="project-face project-back">
+              <span class="project-back-label"> PROJECT DETAILS </span>
+
+              <h3>Heart Disease Prediction</h3>
+
+              <p>
+                Machine learning application that evaluates clinical attributes
+                to estimate heart-disease risk through local or API-based
+                prediction.
+              </p>
+
+              <a
+                href="https://github.com/SpandanaS28/capstone2-deployed"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link"
+              >
+                <span class="github-icon">GH</span>
+
+                <span class="github-link-text"> VIEW PROJECT ON GITHUB </span>
+
+                <span class="github-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="projects-footer">
+        <span> MORE DEVELOPMENT ON </span>
+
+        <span class="projects-footer-line"></span>
+
+        <a
+          href="https://github.com/SpandanaS28"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GITHUB PROFILE ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CERTIFICATES
+    ====================================================== -->
+
+    <section class="page-section certificates-section" id="certificates">
+      <div class="background-grid"></div>
+
+      <div class="certificates-heading">
+        <p class="certificates-label">LEARN / VALIDATE / GROW</p>
+
+        <h2>Certificates<span>.</span></h2>
+
+        <p class="certificates-description">
+          Verified credentials across artificial intelligence, cloud computing,
+          cybersecurity, generative AI and information technology fundamentals.
+        </p>
+      </div>
+
+      <div class="certificates-grid">
+        <a
+          href="https://www.credly.com/badges/194e68ae-936a-480a-a860-696f6c22b4e2/public_url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="certificate-item certificate-link"
+        >
+          <div class="certificate-main">
+            <span class="certificate-mini-label"> VERIFIED CREDENTIAL </span>
+
+            <h3>Artificial Intelligence Fundamentals</h3>
+          </div>
+
+          <span class="certificate-arrow"> ↗ </span>
+        </a>
+
+        <a
+          href="https://www.credly.com/badges/bd8abe89-0ced-4291-91fc-84104cee2b08/public_url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="certificate-item certificate-link"
+        >
+          <div class="certificate-main">
+            <span class="certificate-mini-label"> VERIFIED CREDENTIAL </span>
+
+            <h3>AWS Educate Introduction to Cloud 101</h3>
+          </div>
+
+          <span class="certificate-arrow"> ↗ </span>
+        </a>
+
+        <a
+          href="https://www.credly.com/badges/76fbe305-3d61-4088-ae6b-5b4255c0e10e/public_url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="certificate-item certificate-link"
+        >
+          <div class="certificate-main">
+            <span class="certificate-mini-label"> VERIFIED CREDENTIAL </span>
+
+            <h3>Cybersecurity Fundamentals</h3>
+          </div>
+
+          <span class="certificate-arrow"> ↗ </span>
+        </a>
+
+        <a
+          href="https://www.credly.com/badges/b4e72b14-d297-496e-b12b-586d1eb066e3/public_url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="certificate-item certificate-link"
+        >
+          <div class="certificate-main">
+            <span class="certificate-mini-label"> VERIFIED CREDENTIAL </span>
+
+            <h3>Generative AI in Action</h3>
+          </div>
+
+          <span class="certificate-arrow"> ↗ </span>
+        </a>
+
+        <a
+          href="https://www.credly.com/badges/7922182a-7f71-45e1-9bd6-4cac5409f883/public_url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="certificate-item certificate-link"
+        >
+          <div class="certificate-main">
+            <span class="certificate-mini-label"> VERIFIED CREDENTIAL </span>
+
+            <h3>Getting Started with Artificial Intelligence</h3>
+          </div>
+
+          <span class="certificate-arrow"> ↗ </span>
+        </a>
+
+        <a
+          href="https://www.credly.com/badges/8d6cfc6f-180a-404a-94f6-55e38097796d/public_url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="certificate-item certificate-link"
+        >
+          <div class="certificate-main">
+            <span class="certificate-mini-label"> VERIFIED CREDENTIAL </span>
+
+            <h3>Information Technology Fundamentals</h3>
+          </div>
+
+          <span class="certificate-arrow"> ↗ </span>
+        </a>
+
+        <div class="certificate-item certificate-offline">
+          <div class="certificate-main">
+            <span class="certificate-mini-label"> TNS INDIA FOUNDATION </span>
+
+            <h3>Artificial Intelligence & Machine Learning Foundations</h3>
+          </div>
+
+          <span class="certificate-dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+
+    <section class="page-section contact-section" id="contact">
+      <div class="background-grid"></div>
+
+      <div class="contact-heading">
+        <p class="contact-label">CONNECT / COLLABORATE / BUILD</p>
+
+        <h2>
+          Let's
+
+          <span> connect. </span>
+        </h2>
+
+        <p class="contact-description">
+          I'm open to opportunities in software development, artificial
+          intelligence, machine learning, Python development and
+          technology-driven roles. If you'd like to discuss an opportunity,
+          project or collaboration, feel free to reach out.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- =============================================
+                 LEFT
+            ============================================== -->
+
+        <div class="contact-information">
+          <!-- EMAIL -->
+
+          <a href="mailto:spanduspandu1828@gmail.com" class="contact-info-card">
+            <div class="contact-info-icon">@</div>
+
+            <div>
+              <span class="contact-info-label"> EMAIL </span>
+
+              <strong> spanduspandu1828@gmail.com </strong>
+            </div>
+
+            <span class="contact-card-arrow"> ↗ </span>
+          </a>
+
+          <!-- PHONE -->
+
+          <a href="tel:+916360391879" class="contact-info-card">
+            <div class="contact-info-icon">+</div>
+
+            <div>
+              <span class="contact-info-label"> PHONE </span>
+
+              <strong> +91 63603 91879 </strong>
+            </div>
+
+            <span class="contact-card-arrow"> ↗ </span>
+          </a>
+
+          <!-- RESUME -->
+
+          <a
+            href="{{ url_for('static', filename='resume/Shobhitha_Spandana_S_Resume.pdf') }}"
+            target="_blank"
+            class="contact-info-card"
+          >
+            <div class="contact-info-icon">↓</div>
+
+            <div>
+              <span class="contact-info-label"> RESUME </span>
+
+              <strong> View My Resume </strong>
+            </div>
+
+            <span class="contact-card-arrow"> ↗ </span>
+          </a>
+
+          <!-- SOCIAL -->
+
+          <div class="social-title">FIND ME ONLINE</div>
+
+          <div class="social-links">
+            <!-- LINKEDIN -->
+
+            <a
+              href="https://www.linkedin.com/in/REPLACE-WITH-YOUR-LINKEDIN/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              aria-label="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"
+                ></path>
+              </svg>
+
+              <span> LinkedIn </span>
+            </a>
+
+            <!-- GITHUB -->
+
+            <a
+              href="https://github.com/SpandanaS28"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              aria-label="GitHub"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .297C5.37.297 0 5.67 0 12.297c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.527.117-3.176 0 0 1.008-.322 3.301 1.23A11.52 11.52 0 0 1 12 6.095c1.02.005 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.649.243 2.873.119 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.216.694.825.576C20.565 22.092 24 17.596 24 12.297c0-6.627-5.373-12-12-12z"
+                ></path>
+              </svg>
+
+              <span> GitHub </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- =============================================
+                 MESSAGE FORM
+            ============================================== -->
+
+        <div class="contact-form-wrapper">
+          <div class="contact-form-heading">
+            <span> SEND A MESSAGE </span>
+
+            <h3>Have something in mind?</h3>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="contactName"> YOUR NAME </label>
+
+              <input
+                type="text"
+                id="contactName"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail"> YOUR EMAIL </label>
+
+              <input
+                type="email"
+                id="contactEmail"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage"> MESSAGE </label>
+
+              <textarea
+                id="contactMessage"
+                rows="7"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="message-button">
+              SEND MESSAGE
+
+              <span> ↗ </span>
+            </button>
+
+            <p class="form-note">
+              This will open your email application with the message ready to
+              send.
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- =================================================
+             FINAL FOOTER
+        ================================================== -->
+
+      <footer class="final-footer">
+        <div class="footer-name">
+          Shobhitha Spandana S
+
+          <span>.</span>
+        </div>
+
+        <p>AI / ML • SOFTWARE DEVELOPMENT • PYTHON</p>
+
+        <div class="footer-socials">
+          <a
+            href="https://www.linkedin.com/in/REPLACE-WITH-YOUR-LINKEDIN/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"
+              ></path>
+            </svg>
+          </a>
+
+          <a
+            href="https://github.com/SpandanaS28"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 .297C5.37.297 0 5.67 0 12.297c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.527.117-3.176 0 0 1.008-.322 3.301 1.23A11.52 11.52 0 0 1 12 6.095c1.02.005 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.649.243 2.873.119 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.216.694.825.576C20.565 22.092 24 17.596 24 12.297c0-6.627-5.373-12-12-12z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="footer-bottom">
+          <span> © 2026 SHOBHITHA SPANDANA S </span>
+
+          <a href="#home"> BACK TO TOP ↑ </a>
+        </div>
+      </footer>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
